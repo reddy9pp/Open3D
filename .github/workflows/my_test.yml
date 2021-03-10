@@ -1,14 +1,13 @@
 name: Windows CI
 
-on:
+on: 
   workflow_dispatch:
     inputs:
       developer_build:
         description: 'Set to OFF for Release wheels'
         required: false
         default: 'ON'
-
-  [push]
+    push:
     
 env:
   PIP_VER: "20.2.4"
